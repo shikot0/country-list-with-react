@@ -2,7 +2,6 @@ import './CountryPage.css'
 import {useParams} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-// import CountryInfo from './CountryInfo';
 
 function CountryPage() {
     const {country} = useParams(); 
@@ -30,7 +29,7 @@ function CountryPage() {
 
 
 if(countryData && nativeNames) {return(
-         <>
+           <>
              <Link to="/" className='back-button'><img src="/iconmonstr-arrow-left-lined.svg" alt="arrow-left"/> Back</Link>
              <section className="country-page-main">
                <img src={countryData.flags.svg} alt={`${countryData.name.common} flag`} />
@@ -58,7 +57,7 @@ if(countryData && nativeNames) {return(
                }) : `${countryData.name.common} does not border any country`}</p>
                </div>
              </section>
-             </>
+           </>
     )
 } 
 }

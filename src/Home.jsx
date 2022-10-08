@@ -9,9 +9,10 @@ function Home({countries}) {
 
     return(
         <>
-            <SearchSection query={query} setQuery={setQuery} region={region} setRegion={setRegion}/>
-            {countries && <CountryList countries={countries} query={query} region={region}/>}
+          <SearchSection query={query} setQuery={setQuery} region={region} setRegion={setRegion}/>
+          {countries && <CountryList countries={countries} query={query} region={region}/>}
         </>
     )
 }
+
 export default Home;

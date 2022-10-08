@@ -9,4 +9,5 @@ function Header({toggleTheme}) {
         </header>
     )
 }
+
 export default Header;
