@@ -20,7 +20,6 @@ function CountryList({countries, query, region}) {
                 }
                 return false;
             }).map(country => {
-                console.log(country.region)
                 return (
                     <Link key={uuidv4()} to={`/countries/${country.cioc}`}>
                         <CountryItem country={country}/>
