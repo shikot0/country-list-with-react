@@ -1,0 +1,117 @@
+.back-button {
+    display: flex;
+    align-items: center;
+    margin: 0 0 4% 4%;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    background: hsl(209, 23%, 22%);
+    width: min-content;
+    gap: .75rem;
+    transition: .2s;
+}
+.back-button:hover {
+    scale: 1.05;
+} 
+.back-button img {
+    width: 20px;
+    filter: invert(1);
+}
+.light-mode .back-button {
+    background: hsl(0, 0%, 100%);
+    color: hsl(200, 15%, 8%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.light-mode .back-button img {
+    filter: invert(0);
+}
+.country-page-main {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 0 4%;
+}
+.country-page-main img{
+    width: 45%;
+}
+.country-page-text {
+    width: 55%;
+}
+.country-page-main .country-name {
+    display: block;
+    font-size: 2rem;
+    margin: 0 0 4% 0;
+    text-decoration: none;
+    width: fit-content;
+}
+.country-page-main .country-name:hover {
+    color: rgb(158, 158, 158);
+}
+.country-page-main .country-info {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(210px, 1fr));
+}
+.country-info .country-info-heading,  .country-info .country-info-heading span{
+    font-size: 1.1rem;
+}
+.country-page-main .country-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.border-country-heading {
+    color: white;
+    font-weight: 600;
+    margin: 10% 0 0;
+}
+.light-mode .border-country-heading {
+    color: hsl(200, 15%, 8%);
+}
+.border-country-link {
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 600;
+    background: hsl(209, 23%, 22%);
+    border-radius: 3px;
+    padding: .3rem .4rem;
+    margin: 0 .5rem;
+    color: hsl(0, 0%, 100%);
+}
+.border-country-link:hover {
+    background: hsl(208, 15%, 23%);
+}
+.light-mode .border-country-link{
+    color: hsl(200, 15%, 8%);
+    background: hsl(0, 0%, 100%);
+}
+.light-mode .border-country-link:hover {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 600px) {
+    .back-button {
+        display: block;
+        margin: 5% 0 7.5% 4%;
+        padding: .5rem 2rem;
+    }
+    .country-page-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .country-page-main img{
+        width: 100%;
+    }
+    .country-page-main .country-info {
+        gap: 2rem;
+    }
+    .country-page-text {
+        width: 100%;
+    }
+}
