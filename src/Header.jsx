@@ -8,6 +8,6 @@ function Header({toggleTheme}) {
             </button>
         </header>
     )
-}
+} 
 
 export default Header;
