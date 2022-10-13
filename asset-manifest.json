@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/country-list-with-react/static/css/main.9d8343d0.css",
+    "main.js": "/country-list-with-react/static/js/main.ffac20ee.js",
+    "static/media/search_icon.svg": "/country-list-with-react/static/media/search_icon.501bd13a0537e3f267d1.svg",
+    "index.html": "/country-list-with-react/index.html",
+    "main.9d8343d0.css.map": "/country-list-with-react/static/css/main.9d8343d0.css.map",
+    "main.ffac20ee.js.map": "/country-list-with-react/static/js/main.ffac20ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d8343d0.css",
+    "static/js/main.ffac20ee.js"
+  ]
+}
