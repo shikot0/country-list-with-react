@@ -5,9 +5,13 @@ function SearchSection({query,setQuery,region,setRegion}) {
     const dropdownContainer = useRef();
 
     function handleSearch(e) {
+        e.preventDefault();
         let selected = document.querySelector('.selected');
-        selected.classList.remove('selected');
+        if(selected) {
+            selected.classList.remove('selected');
+        }
         setQuery(e.target.value.toLowerCase())
+        console.log(query)
         setRegion('')
     }
 
@@ -32,7 +36,7 @@ function SearchSection({query,setQuery,region,setRegion}) {
     return (
         <form id="search-section">
             <div className="search-input-div">
-                <input type="search" value={query} id="search-input" aria-label="search for a country" placeholder="Search for a country..." onChange={handleSearch}/>
+                <input type="search" value={query} id="search-input" aria-label="search for a country" placeholder="Search for a country..." onInput={handleSearch}/>
             </div>
             <div className="region-select"  ref={dropdownContainer}>
                 <p className="current-selection" onClick={showDropdown}>{region ? region : 'Filter By Region'} <img src="icon-arrow-down.svg" alt="" /></p> 
