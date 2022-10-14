@@ -11,7 +11,6 @@ function SearchSection({query,setQuery,region,setRegion}) {
             selected.classList.remove('selected');
         }
         setQuery(e.target.value.toLowerCase())
-        console.log(query)
         setRegion('')
     }
 

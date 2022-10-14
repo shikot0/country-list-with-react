@@ -16,7 +16,6 @@ function CountryList({countries, query, region}) {
                 }else if (country.region === region) {
                     return country;
                 }else if (country.name.official.toLowerCase().includes(query) && region === '') {
-                    console.log(country)
                     return country;
                 }
                 return false;
