@@ -5,7 +5,6 @@ import {Link} from 'react-router-dom';
 
 function CountryPage() {
     const {country} = useParams(); 
-    console.log(country)
     const [countryData, setCountryData] = useState(null);
     const [nativeNames, setNativeNames] = useState(null);
     const [languages, setLanguages] = useState(null);
@@ -22,7 +21,6 @@ function CountryPage() {
             setCurrencies(data[0].currencies)
             if(data[0].borders) {
                 setBorderCountries(data[0].borders)
-                console.log(data[0].borders)
             }
         })    
     },[country]) 
