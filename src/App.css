@@ -292,7 +292,7 @@ main {
     font-size: .9rem;
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 450px) {
   header {
     padding: 3%;
   }
@@ -303,7 +303,7 @@ main {
     font-size: .9rem;
   }
   .grid-section {
-    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
   .country-image {
