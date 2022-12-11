@@ -28,7 +28,7 @@ function CountryPage() {
 
 if(countryData && nativeNames) {return(
            <>
-             <Link to="/" className='back-button'><img src="/iconmonstr-arrow-left-lined.svg" alt="arrow-left"/> Back</Link>
+             <Link to="/" className='back-button'><img src={`${process.env.PUBLIC_URL}/iconmonstr-arrow-left-lined.svg" alt="arrow-left`}/> Back</Link>
              <section className="country-page-main">
                <img src={countryData.flags.svg} alt={`${countryData.name.common} flag`} />
                <div className="country-page-text">
